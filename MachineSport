@@ -1,0 +1,55 @@
+public class MachineSport {
+    private String nom;
+    private String marque;
+    private String modele;
+    private double poids;
+    private int nombreDePlaces;
+
+    public MachineSport(String nom, String marque, String modele, double poids, int nombreDePlaces) {
+        this.nom = nom;
+        this.marque = marque;
+        this.modele = modele;
+        this.poids = poids;
+        this.nombreDePlaces = nombreDePlaces;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getMarque() {
+        return marque;
+    }
+
+    public void setMarque(String marque) {
+        this.marque = marque;
+    }
+
+    public String getModele() {
+        return modele;
+    }
+
+    public void setModele(String modele) {
+        this.modele = modele;
+    }
+
+    public double getPoids() {
+        return poids;
+    }
+
+    public void setPoids(double poids) {
+        this.poids = poids;
+    }
+
+    public int getNombreDePlaces() {
+        return nombreDePlaces;
+    }
+
+    public void setNombreDePlaces(int nombreDePlaces) {
+        this.nombreDePlaces = nombreDePlaces;
+    }
+}

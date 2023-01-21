@@ -1,0 +1,31 @@
+public class Sport {
+    private String nom;
+    private ArrayList<Equipe> equipes;
+
+    public Sport(String nom) {
+        this.nom = nom;
+        this.equipes = new ArrayList<Equipe>();
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public ArrayList<Equipe> getEquipes() {
+        return equipes;
+    }
+
+    public void ajouterEquipe(Equipe equipe) {
+        equipes.add(equipe);
+    }
+
+    public void afficherEquipes() {
+        for (Equipe equipe : equipes) {
+            System.out.println(equipe.getNom());
+        }
+    }
+}

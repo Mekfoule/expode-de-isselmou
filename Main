@@ -1,0 +1,38 @@
+public class Main {
+    public static void main(String[] args) {
+        Club club = new Club("Club Sportif", "12 rue de la sport");
+
+        Sport football = new Sport("Football");
+        club.ajouterSport(football);
+
+        Equipe equipe1 = new Equipe("Equipe 1");
+        football.ajouterEquipe(equipe1);
+
+        Joueur joueur1 = new Joueur("John", "Doe", 25, "123456789");
+        equipe1.ajouterJoueur(joueur1);
+        Joueur joueur2 = new Joueur("Jane", "Smith", 22, "987654321");
+        equipe1.ajouterJoueur(joueur2);
+
+        Entraineur entraineur1 = new Entraineur("Bob", "Johnson", 40, 10);
+        equipe1.ajouterEntraineur(entraineur1);
+
+        MachineSport machine1 = new MachineSport("Tapis de course", "NordicTrack", "C 990 Treadmill", 150, 1);
+        club.ajouterMachineSport(machine1);
+        MachineSport machine2 = new MachineSport("Vélo elliptique", "ProForm", "Cardio HIIT", 125, 1);
+        club.ajouterMachineSport(machine2);
+
+
+        System.out.println("Club : " + club.getNom());
+        System.out.println("Adresse : " + club.getAdresse());
+        System.out.println("Sports : ");
+        club.afficherSports();
+        System.out.println("Equipes : ");
+        football.afficherEquipes();
+        System.out.println("Joueurs : ");
+        equipe1.afficherJoueurs();
+        System.out.println("Entraineurs : ");
+        equipe1.afficherEntraineurs();
+        System.out.println("Machines de sport : ");
+        club.afficherMachineSport();
+    }
+}
